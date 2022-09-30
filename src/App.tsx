@@ -42,9 +42,6 @@ function App() {
   //resets the board
   const resetBoard = () => setGameState(INITIAL_GAME_STATE);
 
-  //resets the score
-  const resetScore = () => setGameScore(INITIAL_GAME_SCORE);
-
   //renders checkForWinner() everytime the gamestate changes
   useEffect(() => {
     if (gameState === INITIAL_GAME_STATE) {
