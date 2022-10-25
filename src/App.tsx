@@ -122,7 +122,7 @@ function App() {
         TIC TAC TOE <br />
       </h1>
       <div>
-        <div className=" grid grid-cols-3 mx-auto w-96">
+        <div className=" grid grid-cols-3 mx-auto md:w-96 sm:w-36">
           {gameState.map((player, index) => (
             <Board key={index} onClick={handleClick} {...{ player, index }} />
           ))}
@@ -141,9 +141,6 @@ function App() {
             <p className={`pb-5 ${activePlayerO}`}>PLAYER (O)</p>
             <p>{gameScore.O}</p>
           </div>
-        </div>
-        <div className="relative text-center top-10 text-slate-500">
-          <h3>{`DVCA © ${thisYear}`}</h3>
         </div>
       </div>
     </div>
